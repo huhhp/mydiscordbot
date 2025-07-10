@@ -1,0 +1,50 @@
+2025-07-10T14:05:45.926749441Z       10870 |             const digit* digits = ((PyLongObject*)x)->ob_digit;
+2025-07-10T14:05:45.926751721Z             |                                                     ^~
+2025-07-10T14:05:45.926754001Z       yarl/_quoting_c.c:10925:53: error: ‘PyLongObject’ {aka ‘struct _longobject’} has no member named ‘ob_digit’
+2025-07-10T14:05:45.926756261Z       10925 |             const digit* digits = ((PyLongObject*)x)->ob_digit;
+2025-07-10T14:05:45.926758471Z             |                                                     ^~
+2025-07-10T14:05:45.926760762Z       yarl/_quoting_c.c:11011:27: error: too few arguments to function ‘_PyLong_AsByteArray’
+2025-07-10T14:05:45.926762971Z       11011 |                 int ret = _PyLong_AsByteArray((PyLongObject *)v,
+2025-07-10T14:05:45.926765231Z             |                           ^~~~~~~~~~~~~~~~~~~
+2025-07-10T14:05:45.926767491Z       /usr/local/include/python3.13/cpython/longobject.h:111:17: note: declared here
+2025-07-10T14:05:45.926769762Z         111 | PyAPI_FUNC(int) _PyLong_AsByteArray(PyLongObject* v,
+2025-07-10T14:05:45.926772012Z             |                 ^~~~~~~~~~~~~~~~~~~
+2025-07-10T14:05:45.926774232Z       yarl/_quoting_c.c: In function ‘__Pyx_PyInt_As_long’:
+2025-07-10T14:05:45.926776562Z       yarl/_quoting_c.c:11066:53: error: ‘PyLongObject’ {aka ‘struct _longobject’} has no member named ‘ob_digit’
+2025-07-10T14:05:45.926778772Z       11066 |             const digit* digits = ((PyLongObject*)x)->ob_digit;
+2025-07-10T14:05:45.926780982Z             |                                                     ^~
+2025-07-10T14:05:45.926783432Z       yarl/_quoting_c.c:11121:53: error: ‘PyLongObject’ {aka ‘struct _longobject’} has no member named ‘ob_digit’
+2025-07-10T14:05:45.926785632Z       11121 |             const digit* digits = ((PyLongObject*)x)->ob_digit;
+2025-07-10T14:05:45.926787872Z             |                                                     ^~
+2025-07-10T14:05:45.926790062Z       yarl/_quoting_c.c:11207:27: error: too few arguments to function ‘_PyLong_AsByteArray’
+2025-07-10T14:05:45.926792272Z       11207 |                 int ret = _PyLong_AsByteArray((PyLongObject *)v,
+2025-07-10T14:05:45.926794592Z             |                           ^~~~~~~~~~~~~~~~~~~
+2025-07-10T14:05:45.926796852Z       /usr/local/include/python3.13/cpython/longobject.h:111:17: note: declared here
+2025-07-10T14:05:45.926799072Z         111 | PyAPI_FUNC(int) _PyLong_AsByteArray(PyLongObject* v,
+2025-07-10T14:05:45.926801292Z             |                 ^~~~~~~~~~~~~~~~~~~
+2025-07-10T14:05:45.926803532Z       yarl/_quoting_c.c: In function ‘__Pyx_PyInt_As_int’:
+2025-07-10T14:05:45.926805832Z       yarl/_quoting_c.c:11359:53: error: ‘PyLongObject’ {aka ‘struct _longobject’} has no member named ‘ob_digit’
+2025-07-10T14:05:45.926808052Z       11359 |             const digit* digits = ((PyLongObject*)x)->ob_digit;
+2025-07-10T14:05:45.926810232Z             |                                                     ^~
+2025-07-10T14:05:45.926815583Z       yarl/_quoting_c.c:11414:53: error: ‘PyLongObject’ {aka ‘struct _longobject’} has no member named ‘ob_digit’
+2025-07-10T14:05:45.926817823Z       11414 |             const digit* digits = ((PyLongObject*)x)->ob_digit;
+2025-07-10T14:05:45.926820092Z             |                                                     ^~
+2025-07-10T14:05:45.926822363Z       yarl/_quoting_c.c:11500:27: error: too few arguments to function ‘_PyLong_AsByteArray’
+2025-07-10T14:05:45.926824623Z       11500 |                 int ret = _PyLong_AsByteArray((PyLongObject *)v,
+2025-07-10T14:05:45.926826863Z             |                           ^~~~~~~~~~~~~~~~~~~
+2025-07-10T14:05:45.926829073Z       /usr/local/include/python3.13/cpython/longobject.h:111:17: note: declared here
+2025-07-10T14:05:45.926831293Z         111 | PyAPI_FUNC(int) _PyLong_AsByteArray(PyLongObject* v,
+2025-07-10T14:05:45.926833483Z             |                 ^~~~~~~~~~~~~~~~~~~
+2025-07-10T14:05:45.926835663Z       yarl/_quoting_c.c: In function ‘__Pyx_PyIndex_AsSsize_t’:
+2025-07-10T14:05:45.926838043Z       yarl/_quoting_c.c:11865:45: error: ‘PyLongObject’ {aka ‘struct _longobject’} has no member named ‘ob_digit’
+2025-07-10T14:05:45.926840223Z       11865 |     const digit* digits = ((PyLongObject*)b)->ob_digit;
+2025-07-10T14:05:45.926842373Z             |                                             ^~
+2025-07-10T14:05:45.926854463Z       error: command '/usr/bin/gcc' failed with exit code 1
+2025-07-10T14:05:45.926856993Z       [end of output]
+2025-07-10T14:05:45.926859173Z   
+2025-07-10T14:05:45.926861473Z   note: This error originates from a subprocess, and is likely not a problem with pip.
+2025-07-10T14:05:45.926870824Z   ERROR: Failed building wheel for yarl
+2025-07-10T14:05:45.927066557Z Failed to build yarl
+2025-07-10T14:05:46.40993635Z ERROR: Failed to build installable wheels for some pyproject.toml based projects (yarl)
+2025-07-10T14:05:46.853895203Z ==> Build failed 😞
+2025-07-10T14:05:46.853920224Z ==> Common ways to troubleshoot your deploy: https://render.com/docs/troubleshooting-deploys
